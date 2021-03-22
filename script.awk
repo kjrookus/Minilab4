@@ -4,7 +4,7 @@ BEGIN{
 FCylinders=0
 TCost=0
 }{
-if($4 >=30000) {Icount+=1}
+if($4 <=30000) {Icount+=1}
 if($6 == 4 && $5=="hybrid") {FCylinders+=1}
 if($6 == 4 && $5=="hybrid") {TCost+=$4}
 }
